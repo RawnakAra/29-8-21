@@ -1,4 +1,8 @@
 var  YearsandCenturies = function (num){
-    return Math.round(num-(num%100))
+    let x=num%100, y=(num-x)/100;   
+    if(x===0)
+    return y
+    else 
+    return y+1
 }
-console.log(YearsandCenturies(1705))
+console.log(YearsandCenturies(1700))
